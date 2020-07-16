@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/" method="POST" enctype="multipart/form-data">
+{%csrf_token%}
+    <h3>SENDER_MAIL  :</h3> <input type="email" name="from"><br>
+    <h3>RECEIVER_MAIL:</h3> <input type="email" name="to"><br>
+    <h3>SUBJECT      :</h3> <input type="text" name="subj"><br>
+    <h3>MESSAGE      :</h3> <input type="text" name="message"><br>
+    <input type="file" name="file"><br>
+    <input type="submit" name="send">
+    
+    </form>
+</body>
+</html>
